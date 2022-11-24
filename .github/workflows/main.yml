@@ -5,12 +5,12 @@ on: # 触发条件
       - master
       
   # 定时器
-   schedule:
+  schedule:
      # 分 时 日期 月份 星期 
      # 时 需要 +8 表示北京时间
-     - cron: '0 0,4,10,15 * * 1-7'
+    - cron: '15 0,4,7,10,15 * * 1-5'
 jobs:
-  push-empty-code: 
+  push-empty-code:
     runs-on: ubuntu-latest
     steps:
       - name: create file
