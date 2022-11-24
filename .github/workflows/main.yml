@@ -2,7 +2,8 @@ name: Build and Deploy
 on: # 触发条件
   push:    # 有推送时触发
     branches:
-      - main
+      - master
+      
   # 定时器
   # schedule:
   #   # 分 时 日期 月份 星期 
